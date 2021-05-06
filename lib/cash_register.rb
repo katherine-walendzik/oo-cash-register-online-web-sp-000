@@ -13,16 +13,16 @@ class CashRegister
     @total
   end
 
-def apply_discount
-  if @discount > 0
-    x
-  else
-    x
+  def apply_discount
+    if @discount > 0
+      x
+    else
+      x
+    end
   end
-end
 
-def void_last_transaction
-  @total -= @last_transaction_amount
-end
+  def void_last_transaction
+    @total -= @last_transaction_amount
+  end
   
 end
