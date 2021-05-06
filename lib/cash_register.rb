@@ -8,10 +8,6 @@ class CashRegister
   end
   
   def add_item(item, quantity = 1, price)
-    quantity.times do |item|
-      @items << item
-    end
-
     @total += price*quantity
     @last_transaction_amount = price * quantity
     @total
